@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "013aa2f4-0814-4f7b-a60b-eedd79c88434",
+		"name": "week2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32261393"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/users/userWithHighestSalary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/users/userWithHighestSalary"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/userWithLowestSalary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/users/userWithLowestSalary"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/user/:switzerland",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/user/:switzerland",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						":switzerland"
+					],
+					"variable": [
+						{
+							"key": "switzerland",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/users"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/addUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"name\": \"Sizza\",\n        \"surname\": \"Benardo\",\n        \"country\": \"Portugal\",\n        \"salary\": 8700\n    }\n    ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/users/addUser"
+			},
+			"response": []
+		}
+	]
+}
